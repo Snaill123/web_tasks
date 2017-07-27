@@ -9,17 +9,18 @@
   <body>  
     <div style="text-align:center;margin:100px auto;">  
       <h2>Message Board</h2> 
+      <!--两个查询表单-->
       <h3>query</h3>
       <form action="/id" method="get"> 
         <p>input the id</p> <input name="pid" type="text" />  
-        <input type="submit" value="Submit" />  
+        <input type="submit" value="Search" />  
       </form>  
       <form action="/author" method="get">  
         <p>input the author</p><input name="pauthor" type="text" />  
-        <input type="submit" value="Submit" />  
+        <input type="submit" value="Search" />  
       </form> 
       <h3><a href="/add">add a message</a></h3>
-      
+      <!--使用表格，展示留言-->
       <table border="2"style="text-align:center;margin:100px auto;">
         <h3>all the messages</h3>
         <tr>
@@ -34,12 +35,15 @@
         %><tr>
             <td><%= $arr[i].id %></td>
         <%
-           del_id = $arr[i].id.to_s
+           del_id = $arr[i].id
+
         %>
             <td><%= $arr[i].author %></td>
             <td><%= $arr[i].message %></td>
             <td><%= $arr[i].created_at %></td>
-            <td><form action="/delete" method="post"><input name= del_id type="submit" value="delete" /> </form></td>
+            <td><form action="/delete/<%= $arr[i].id %>" method="get">
+                <!-- <input type = "hidden" name ="del_id" value=<%= $arr[i].id%> > -->
+                <input type="submit" value="delete"></form></td>
           </tr>
       <% end
       %></table>
