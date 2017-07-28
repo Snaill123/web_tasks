@@ -18,13 +18,14 @@
           <th>message</th>
           <th>created_at</th>
         </tr>
-        <% i = $arr.length %>
+        <% i = @arr.length %>
         <% i.times do |i|
         %><tr>
-            <td><%= $arr[i].id %></td>
-            <td><%= $arr[i].author %></td>
-            <td><%= $arr[i].message %></td>
-            <td><%= $arr[i].created_at %></td>
+            <td><%= @arr[i].id %></td>
+            <td><%= @arr[i].author %></td>
+            <td><%= @arr[i].message %></td>
+            <td><%= @arr[i].created_at %></td>
+            </tr>
       <% end
       %></table>
      <h3><a href="/">return to the index</a></h3>

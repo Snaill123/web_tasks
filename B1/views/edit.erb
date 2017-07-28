@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
+  
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  
+  <head>  
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />  
+    <title>Wellcome to Message Board</title>  
+  </head>  
+  <body>  
+    <div style="text-align:center;margin:100px auto;">  
+      <h2>Message Board</h2> 
+      <h3>edit the message</h3>
+      <!--留言编写页面-->
+      <form action="/edit" method="post"> 
+        <input type="hidden" name="id" value=<%=@arr[0].id%>/>
+        <p>edit the  author</p> <input name="author" type="text" value= <%=@arr[0].author%> />  
+        <p>edit the message</p> 
+        <textarea name="message" rows="20" cols="90"><%=@arr[0].message%></textarea> 
+        <BR><input type="submit" value="Edit"/>  
+      </form>   
+    </div>   
+  </body>  
+</html>  

@@ -11,39 +11,52 @@
       <h2>Message Board</h2> 
       <!--两个查询表单-->
       <h3>query</h3>
-      <form action="/id" method="get"> 
+      <form action="/" method="get"> 
         <p>input the id</p> <input name="pid" type="text" />  
         <input type="submit" value="Search" />  
       </form>  
-      <form action="/author" method="get">  
+      <form action="/" method="get">  
         <p>input the author</p><input name="pauthor" type="text" />  
         <input type="submit" value="Search" />  
       </form> 
+      <h3>resume a message</h3>
+      <form action="/resume" method="get">  
+        <p>input the id of the message </p><input name="pid" type="text" />  
+        <input type="submit" value="resume" />  
+      </form> 
       <h3><a href="/add">add a message</a></h3>
+      <h3><a href="/">all the messages</a></h3>
       <!--使用表格，展示留言-->
       <table border="2"style="text-align:center;margin:100px auto;">
-        <h3>all the messages</h3>
         <tr>
           <th>id</th>
           <th>author</th>
           <th>message</th>
           <th>created_at</th>
           <th>delete</th>
+          <th>edit</th>
         </tr>
-        <% i = $arr.length %>
+        <% i = @arr.length %>
         <% i.times do |i|
         %><tr>
-            <td><%= $arr[i].id %></td>
+            <td><%=@arr[i].id%></td>
         <%
-           del_id = $arr[i].id
-
+           del_id = @arr[i].id
         %>
-            <td><%= $arr[i].author %></td>
-            <td><%= $arr[i].message %></td>
-            <td><%= $arr[i].created_at %></td>
-            <td><form action="/delete/<%= $arr[i].id %>" method="get">
-                <!-- <input type = "hidden" name ="del_id" value=<%= $arr[i].id%> > -->
-                <input type="submit" value="delete"></form></td>
+            <td> <%=@arr[i].author%> </td>
+            <td> 
+                 <%=@arr[i].message%> 
+            </td>
+            <td> <%=@arr[i].created_at%> </td>
+            <td><form action="/delete/<%= @arr[i].id %>" method="get">
+                <input type="submit" value="delete">
+                </form>
+            </td>
+            <td>
+                <form action="/edit/<%= @arr[i].id%>" method="get">
+                <input type="submit" value="edit">
+                </form>
+            </td>
           </tr>
       <% end
       %></table>
