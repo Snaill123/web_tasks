@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">  
+  
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">  
+  
+  <head>  
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />  
+    <title>Wellcome to Message Board</title>  
+  </head>  
+  <body>  
+    <div style="text-align:center;margin:100px auto;">  
+      <h2>Message Board</h2> 
+      <!--两个查询表单-->
+      <h3>query</h3>
+      <form action="/start" method="get"> 
+        <p>input the id</p> <input name="pid" type="text" />  
+        <input type="submit" value="Search" />  
+      </form>  
+      <form action="/start" method="get">  
+        <p>input the author</p><input name="pauthor" type="text" />  
+        <input type="submit" value="Search" />  
+      </form> 
+      <h3><a href="/own"> personal information and your own messages</a></h3>
+      <h3><a href="/add">add a message</a></h3>
+      <h3><a href="/start">all the messages</a></h3>
+      <!--使用表格，展示留言-->
+      <table border="2"style="text-align:center;margin:100px auto;">
+        <tr>
+          <th>id</th>
+          <th>author</th>
+          <th>message</th>
+          <th>created_at</th>
+        </tr>
+        <% i = @messages_show.length %>
+        <% i.times do |i|
+        %><tr>
+            <td><%=@messages_show[i].id%></td>
+        <%
+           @user = User.find(@messages_show[i].user_id)
+        %>
+            <td> <%=@user.username %> </td>
+            <td> 
+                 <%=@messages_show[i].content%> 
+            </td>
+            <td> <%=@messages_show[i].created_at%> </td>   
+          </tr>
+      <% end
+      %></table>
+      <h3><a href ="/change"> change the password</a></h3>
+      <h3><a href="/logout">log out</a></h3>
+    </div>   
+  </body>  
+</html>  
