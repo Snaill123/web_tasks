@@ -6,7 +6,7 @@ require 'yaml'
 #use Rack::Session::Pool, :expire_after =>120
 
 configure do 
-	enable :sessions
+    enable :sessions
     dbconfig = YAML::load(File.open('database.yml'))     
     ActiveRecord::Base.establish_connection(dbconfig)     
 
