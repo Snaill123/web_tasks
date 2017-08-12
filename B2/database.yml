@@ -1,0 +1,5 @@
+adapter: mysql2
+host:  127.0.0.1
+username: root  # mysql用户名
+password: root # mysql密码
+database: message #mysql数据库名

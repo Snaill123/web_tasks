@@ -2,17 +2,13 @@ require 'sinatra'
 require 'mysql2'
 require 'active_record'    
 require 'digest/sha1'
+require 'yaml'
 #use Rack::Session::Pool, :expire_after =>120
 
 configure do 
 	enable :sessions
-    ActiveRecord::Base.establish_connection(
-    :adapter => "mysql2",
-    :host => "127.0.0.1",
-    :username => "root",  # mysql用户名
-    :password => "root",  # mysql密码
-    :database => "message")  # mysql数据库名
-
+    dbconfig = YAML::load(File.open('database.yml'))     
+    ActiveRecord::Base.establish_connection(dbconfig)     
 
     ActiveRecord::Schema.define do
         if !table_exists? :users
