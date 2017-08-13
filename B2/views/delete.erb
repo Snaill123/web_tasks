@@ -11,7 +11,6 @@
       <h2>Message Board</h2> 
       <!--使用表格，展示留言-->
       <table border="2"style="text-align:center;margin:100px auto;">
-        <h3>now the messages are </h3>
         <tr>
           <th>id</th>
           <th>author</th>
@@ -21,14 +20,19 @@
         <% i = @messages_show.length %>
         <% i.times do |i|
         %><tr>
-            <td><%= @messages_show[i].id %></td>
-            <td><%= session[:admin_id].to_s %></td>
-            <td><%= @messages_show[i].content %></td>
-            <td><%= @messages_show[i].created_at %></td>
-            </tr>
+            <td><%=@messages_show[i].id%></td>
+        <%
+           @user = User.find(@messages_show[i].user_id)
+        %>
+            <td> <%=@user.username %> </td>
+            <td> 
+                 <%=@messages_show[i].content%> 
+            </td>
+            <td> <%=@messages_show[i].created_at%> </td>   
+          </tr>
       <% end
       %></table>
-     <h3><a href="/">return to the index</a></h3>
+     <h3><a href="/start">return to the index</a></h3>
     </div>   
   </body>  
 </html>  

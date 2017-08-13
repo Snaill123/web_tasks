@@ -6,9 +6,9 @@ require 'yaml'
 #use Rack::Session::Pool, :expire_after =>120
 
 configure do 
-    enable :sessions
-    dbconfig = YAML::load(File.open('database.yml'))     
-    ActiveRecord::Base.establish_connection(dbconfig)     
+	enable :sessions
+	dbconfig = YAML::load(File.open('database.yml'))     
+    ActiveRecord::Base.establish_connection(dbconfig)  
 
     ActiveRecord::Schema.define do
         if !table_exists? :users
@@ -23,8 +23,9 @@ configure do
             create_table :messages do |table|
                 table.column :content, :string
                 table.column :user_id, :integer
+                table.column :created_at, :Date
             end
-            add_foreign_key :messages, :user_id
+            #add_foreign_key :messages, :user_id
         end
     end
 
@@ -41,13 +42,8 @@ configure do
 end
 
 get'/' do
-	#如果已登录，转至首页
-	if session[:admin] == true
-		redirect '/start'
-	else
-	#否则转到登录页
-		redirect '/login'
-	end
+	#如果已登录，转至首页,否则转到登录页
+	redirect 'login' unless session[:admin]
 end
 
 get '/login' do
@@ -55,18 +51,18 @@ get '/login' do
 end
 
 post '/login' do
-    name = params[:username].to_s
-    psd = params[:password].to_s
-    user = User.where(:username=> name) 
-    #若登录成功，转至首页
-    if user[0]!= nil and Digest::SHA1.hexdigest(psd).eql?(user[0].password)
-        session[:admin] = true 
-        session[:admin_id] = user[0].id
-    	redirect '/start'
-    else
-    #否则需重新登录
-    	erb :login
-    end
+	name = params[:username].to_s
+	psd = params[:password].to_s
+	user = User.where(:username=> name) 
+	#若登录成功，转至首页
+	if user[0]!= nil and Digest::SHA1.hexdigest(psd).eql?(user[0].password)
+	    session[:admin] = true 
+	    session[:admin_id] = user[0].id
+	    redirect '/start'
+	else
+	#否则需重新登录
+	   erb :login
+	end
 end
 
 #退出登录
@@ -114,19 +110,23 @@ end
 
 
 post '/add' do
-    message = params['message'].to_s
-    msg = Message.new
-    msg.content = message
-    #msg.created_at = Time.new
-    msg.user_id = session[:admin_id].to_i
-    #判断留言是否有效
-    if msg.valid?
-        msg.save
-        redirect'/start'
-    #留言无效，转至error页面
-    else
-        redirect '/add/error'
-    end 
+	if session[:admin]
+	    message = params['message'].to_s
+	    msg = Message.new
+	    msg.content = message
+	    msg.created_at = Time.new
+	    msg.user_id = session[:admin_id].to_i
+	    #判断留言是否有效
+	    if msg.valid?
+	        msg.save
+	        redirect'/start'
+	    #留言无效，转至error页面
+	    else
+	        redirect '/add/error'
+	    end 
+	else
+		redirect 'not_login'
+	end
 end
 
 get '/add/error' do
@@ -148,20 +148,25 @@ end
 
 #根据提交表单编辑留言
 post '/edit' do
-	id=params['id'].to_i
-    message = params['message'].to_s
-    #对新编辑的留言进行有效性判断
-    if message.length > 10
-        msg = Message.find(id)
-        # msg.content = message
-        # msg.created_at = Time.new
-        # msg.save
-        msg.update(content: message)
-    	#重定向到首页
-    	redirect '/start'
+	if session[:admin]
+		id=params['id'].to_i
+	    message = params['message'].to_s
+	    #对新编辑的留言进行有效性判断
+	    if message.length > 10
+	        msg = Message.find(id)
+	        # msg.content = message
+	        # msg.created_at = Time.new
+	        # msg.save
+	        msg.update(content: message)
+	        msg.update(created_at: Time.new)
+	    	#重定向到首页
+	    	redirect '/start'
+		else
+			#留言无效
+			redirect '/add/error'
+		end
 	else
-		#留言无效
-		redirect '/add/error'
+		redirect 'not_login'
 	end
 end
 
@@ -180,26 +185,21 @@ get '/signup' do
     erb :signup
 end
 
-get '/signup_success' do
-    erb :signup_success
-end
-
-
 post '/signup' do
-    username = params[:username].to_s
-    password = params[:password].to_s
-    users_by_username = User.where(:username=>username)
-    if username.length == 0 or password.length == 0
-        redirect '/signup'
-    elsif users_by_username.length == 0 
-        user = User.new
-        user.username = username
-        user.password = Digest::SHA1.hexdigest(password)
-        user.save
-        redirect '/signup_success'
-    else
-       redirect '/signup_fail'
-    end
+	username = params[:username].to_s
+	password = params[:password].to_s
+	users_by_username = User.where(:username=>username)
+	if username.length == 0 or password.length == 0
+	    redirect '/signup'
+	elsif users_by_username.length == 0 
+	    user = User.new
+	    user.username = username
+	    user.password = Digest::SHA1.hexdigest(password)
+	    user.save
+	    erb :signup_success
+	else
+	    erb :signup_fail
+	end
 end
         
 
@@ -215,10 +215,6 @@ get '/own' do
     end
 end  
 
-get '/signup_fail' do
-    erb :signup_fail
-end
-
 get '/not_login' do
     erb :not_login
 end
@@ -227,24 +223,23 @@ get '/change' do
 end
 
 post '/change' do
-    old_password = params[:old_password].to_s
-    new_password = params[:new_password].to_s
-    user= User.find(session[:admin_id].to_i)
-    puts user.password
-    if Digest::SHA1.hexdigest(old_password).eql? (user.password)
-        user.update(password: Digest::SHA1.hexdigest(new_password))
-       # user.save
-        puts user.password
-        redirect '/change_password_success'
-    else
-        redirect'/change_password_fail'
-    end  
+	if session[:admin]
+	    old_password = params[:old_password].to_s
+	    new_password = params[:new_password].to_s
+	    user= User.find(session[:admin_id].to_i)
+	    if Digest::SHA1.hexdigest(old_password).eql? (user.password)
+	        user.update(password: Digest::SHA1.hexdigest(new_password))
+	       # user.save
+	        puts user.password
+	        erb :change_password_success
+	    else
+	        erb :change_password_fail
+	    end  
+	else
+		redirect '/not_login'
+	end
 end
 
-get '/change_password_success' do
-    erb :change_password_success
-end
-
-get '/change_password_fail' do
-    erb :change_password_fail
+after do
+    ActiveRecord::Base.connection.close
 end
