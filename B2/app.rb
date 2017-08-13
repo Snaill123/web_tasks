@@ -6,8 +6,8 @@ require 'yaml'
 #use Rack::Session::Pool, :expire_after =>120
 
 configure do 
-    enable :sessions
-    dbconfig = YAML::load(File.open('database.yml'))     
+	enable :sessions
+	dbconfig = YAML::load(File.open('database.yml'))     
     ActiveRecord::Base.establish_connection(dbconfig)  
 
     ActiveRecord::Schema.define do
@@ -23,7 +23,7 @@ configure do
             create_table :messages do |table|
                 table.column :content, :string
                 table.column :user_id, :integer
-                table.column :created_at, :Date
+                table.column :created_at, :DateTime
             end
             #add_foreign_key :messages, :user_id
         end
@@ -65,6 +65,9 @@ post '/login' do
 	end
 end
 
+get '/not_login' do
+    erb :not_login
+end
 #退出登录
 get '/logout' do
 	session.clear
@@ -116,6 +119,7 @@ post '/add' do
 	    msg.content = message
 	    msg.created_at = Time.new
 	    msg.user_id = session[:admin_id].to_i
+	    #puts msg.created_at
 	    #判断留言是否有效
 	    if msg.valid?
 	        msg.save
@@ -158,7 +162,7 @@ post '/edit' do
 	        # msg.created_at = Time.new
 	        # msg.save
 	        msg.update(content: message)
-	        msg.update(created_at: Time.new)
+	        msg.update(created_at: Time.new.to_s)
 	    	#重定向到首页
 	    	redirect '/start'
 		else
@@ -215,9 +219,6 @@ get '/own' do
     end
 end  
 
-get '/not_login' do
-    erb :not_login
-end
 get '/change' do
     erb :change
 end
@@ -230,7 +231,6 @@ post '/change' do
 	    if Digest::SHA1.hexdigest(old_password).eql? (user.password)
 	        user.update(password: Digest::SHA1.hexdigest(new_password))
 	       # user.save
-	        puts user.password
 	        erb :change_password_success
 	    else
 	        erb :change_password_fail
