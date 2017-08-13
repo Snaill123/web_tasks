@@ -206,7 +206,7 @@ post '/signup' do
 	end
 end
         
-
+#展示登录者自己的留言信息
 get '/own' do
     if session[:admin]
         user = User.find(session[:admin_id].to_i)
@@ -218,7 +218,7 @@ get '/own' do
         redirect '/not_login'
     end
 end  
-
+#修改密码页
 get '/change' do
     erb :change
 end
@@ -239,7 +239,7 @@ post '/change' do
 		redirect '/not_login'
 	end
 end
-
+#关闭连接
 after do
     ActiveRecord::Base.connection.close
 end
