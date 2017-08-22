@@ -1,0 +1,39 @@
+ 文章表 POSTS
+ 包含字段：
+          id（key）
+          admin_id
+          author
+          title
+          content
+          created_at
+          month
+          category
+          comment_number(评论条数)
+ 留言表  
+ 包含字段：
+         id（key）
+         posts_id
+         author
+         content
+         created_at
+ 反馈表
+ 包含字段：
+         id
+         content
+         created_at
+ 管理员账户表：
+ 包含字段：
+        id
+        user_name
+        password
+
+
+         
+  
+         
+         
+         
+         
+         
+          
+          
