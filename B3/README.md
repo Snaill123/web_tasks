@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* 前后端好像还是太耦合了，我把后台的放在admin之后，但是控制器还是只定义了单个
 
-Things you may want to cover:
 
-* Ruby version
+* 有个bug就是feedback点击后出现不知名报错，没调出来
 
-* System dependencies
 
-* Configuration
+* /signup是后台的注册界面，注册后有删除comments和post的权限
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 另外就是定义两个controller是把其中一个放在admin文件夹下吗，我试过在controller下建立admin文件夹，不过在文件夹中建立controller失败了qaq
