@@ -1,5 +1,5 @@
 class Comment < ApplicationRecord
   belongs_to :post
-  validates :author,presence: true,uniqueness: true
-  validates :content,length: {minimum: 5,maximum: 500}
+  validates :author, presence: true, length: {minmum: 1, maximum: 20}
+  validates :content, length: {minmum: 5, maximum: 500}
 end

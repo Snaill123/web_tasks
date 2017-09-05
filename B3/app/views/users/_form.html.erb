@@ -1,13 +1,13 @@
-<%= form_for @admin, url: profile_path, method: :patch, :html => { :class => "form-horizontal user" } do |f| %>
+<%= form_for @user, url: profile_path, method: :patch, :html => { :class => "form-horizontal user" } do |f| %>
 
-    <% if @admin.errors.any? %>
+    <% if @user.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
       <div class="panel-heading">
         <h3 class="panel-title"><%= pluralize(@admin.errors.count, "error") %> prohibited this user from being saved:</h3>
       </div>
       <div class="panel-body">
         <ul>
-        <% @admin.errors.full_messages.each do |msg| %>
+        <% @user.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
         </ul>

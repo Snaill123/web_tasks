@@ -2,10 +2,10 @@
 
 one:
   title: MyString
-  content: MyText
-  admin: one
+  text: MyText
+  user: one
 
 two:
   title: MyString
-  content: MyText
-  admin: two
+  text: MyText
+  user: two

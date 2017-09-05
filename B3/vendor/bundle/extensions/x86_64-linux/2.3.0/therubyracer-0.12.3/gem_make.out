@@ -1,12 +1,12 @@
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/therubyracer-0.12.3/ext/v8
-/usr/bin/ruby2.3 -r ./siteconf20170828-39966-83k68c.rb extconf.rb
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/therubyracer-0.12.3/ext/v8
+/usr/bin/ruby2.3 -r ./siteconf20170904-56806-668u0m.rb extconf.rb
 checking for main() in -lpthread... yes
 creating Makefile
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/therubyracer-0.12.3/ext/v8
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/therubyracer-0.12.3/ext/v8
 make "DESTDIR=" clean
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/therubyracer-0.12.3/ext/v8
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/therubyracer-0.12.3/ext/v8
 make "DESTDIR="
 compiling accessor.cc
 compiling array.cc
@@ -38,6 +38,6 @@ compiling v8.cc
 compiling value.cc
 linking shared-object v8/init.so
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/therubyracer-0.12.3/ext/v8
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/therubyracer-0.12.3/ext/v8
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 init.so ./.gem.20170828-39966-67n1xj/v8
+/usr/bin/install -c -m 0755 init.so ./.gem.20170904-56806-15vabtv/v8

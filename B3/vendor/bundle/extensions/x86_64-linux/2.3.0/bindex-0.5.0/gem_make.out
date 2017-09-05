@@ -1,15 +1,15 @@
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/bindex-0.5.0/ext/bindex
-/usr/bin/ruby2.3 -r ./siteconf20170827-19648-1oeaeoj.rb extconf.rb
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/usr/bin/ruby2.3 -r ./siteconf20170904-39819-28v22f.rb extconf.rb
 creating Makefile
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR=" clean
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR="
 compiling cruby.c
 linking shared-object bindex/cruby.so
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cruby.so ./.gem.20170827-19648-1cjyrix/bindex
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20170904-39819-9kwudl/bindex

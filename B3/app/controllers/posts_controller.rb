@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   include UsersHelper
+  
   before_action :require_login, except: [:index, :show]
+
   def index
     @posts=Post.order(created_at: :desc)
   end
@@ -16,10 +18,11 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.user_id = session[:user_id]
     if @post.save
-      redirect_to show_post_path(@post)
+      redirect_to admin_posts_path(@post)
     else
-      render 'create'
+      render 'new'
     end
   end
 
@@ -50,6 +53,7 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
   end
+
 
   private
   # 允许params[:post][:title] 和 params[:post][:text] 被访问

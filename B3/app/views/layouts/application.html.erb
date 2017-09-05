@@ -14,18 +14,6 @@
 
     <%= stylesheet_link_tag "application", :media => "all" %>
 
-    <!-- For third-generation iPad with high-resolution Retina display: -->
-    <!-- Size should be 144 x 144 pixels -->
-    
-    <!-- For iPhone with high-resolution Retina display: -->
-    <!-- Size should be 114 x 114 pixels -->
-    
-
-    <!-- For first- and second-generation iPad: -->
-    <!-- Size should be 72 x 72 pixels -->
-    
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <!-- Size should be 57 x 57 pixels -->
 
   </head>
   <body>
@@ -35,13 +23,13 @@
         <a class="navbar-brand" href="/">Blog</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav pull-right">
-          <% if logged_in? %>
-            <li><%= link_to "Manage", "/admin/posts"  %></li>
-            <li><%= link_to "Profile", "/profile"  %></li>
-            <li><%= link_to "Logout", "/logout"  %></li>
-          <% else %>
-            <li><%= link_to "Login",login_path %></li>
-          <% end %>
+          
+              <!-- <li><%= link_to "Manage", "/admin/posts"  %></li> -->
+            <!-- <li><%= link_to "Profile", "/profile"  %></li> -->
+            <!-- <li><%= link_to "Logout", "/logout"  %></li> -->
+          
+             <!-- <li><%= link_to "Login","/login" %></li> --> 
+          
           </ul>
         </div>
       </div>
@@ -56,7 +44,7 @@
       </div><!--/row-->
 
       <footer>
-        <p>&copy; Company 2015</p>
+        <p>&copy; Company 2017 By XiaoHuang</p>
       </footer>
 
        <%= debug(params) if Rails.env.development? %>
@@ -65,3 +53,4 @@
 
   </body>
 </html>
+

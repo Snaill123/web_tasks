@@ -1,1 +1,24 @@
-捉急啊，还有bug待调，报告下进度@_@,目前完成了后台数据库创建，前端页面和动作之间的配置，以及登陆状态的判断，password加密存储实现，bootstrap显示未完成，部分页面显示不全
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

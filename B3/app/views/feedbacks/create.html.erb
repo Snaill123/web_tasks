@@ -1,0 +1,36 @@
+<h4>Create your feedback</h4>
+<hr />
+<%= form_for :feedback, url: create_feedback_path, :html => { :class => "form-horizontal feedback" } do |f| %>
+
+  <div class="form-group">
+    <%= f.label :author, :class => 'col-sm-1 control-label' %>
+    <div class="controls">
+      <div class="col-sm-9">
+      <%= f.text_field :author, :class => 'form-control' %>
+    </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :email, :class => 'col-sm-1 control-label' %>
+    <div class="controls">
+      <div class="col-sm-9">
+      <%= f.text_field :email, :class => 'form-control' %>
+    </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :content, :class => 'col-sm-1 control-label' %>
+    <div class="controls">
+      <div class="col-sm-9">
+        <%= f.text_area :content, :class => 'form-control', :row => 12  %>
+    </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+      <div class="col-sm-7">
+  <%= f.submit "Submit", :class => 'btn btn-success' %>
+  </div>
+  </div>
+
+

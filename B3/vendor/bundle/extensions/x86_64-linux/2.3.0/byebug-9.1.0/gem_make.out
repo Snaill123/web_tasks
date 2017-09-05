@@ -1,11 +1,11 @@
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/byebug-9.1.0/ext/byebug
-/usr/bin/ruby2.3 -r ./siteconf20170827-19648-1nnhx9s.rb extconf.rb
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+/usr/bin/ruby2.3 -r ./siteconf20170904-39819-7x660l.rb extconf.rb
 creating Makefile
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/byebug-9.1.0/ext/byebug
 make "DESTDIR=" clean
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/byebug-9.1.0/ext/byebug
 make "DESTDIR="
 compiling breakpoint.c
 compiling byebug.c
@@ -14,6 +14,6 @@ compiling locker.c
 compiling threads.c
 linking shared-object byebug/byebug.so
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/byebug-9.1.0/ext/byebug
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 byebug.so ./.gem.20170827-19648-1qzetzl/byebug
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20170904-39819-uzeyaf/byebug

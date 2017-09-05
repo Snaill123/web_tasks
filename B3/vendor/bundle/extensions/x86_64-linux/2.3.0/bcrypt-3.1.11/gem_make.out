@@ -1,11 +1,11 @@
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
-/usr/bin/ruby2.3 -r ./siteconf20170829-22106-35kbvh.rb extconf.rb
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+/usr/bin/ruby2.3 -r ./siteconf20170904-58977-1g46aiy.rb extconf.rb
 creating Makefile
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
 make "DESTDIR=" clean
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
 make "DESTDIR="
 compiling bcrypt_ext.c
 compiling crypt.c
@@ -14,6 +14,6 @@ compiling crypt_gensalt.c
 compiling wrapper.c
 linking shared-object bcrypt_ext.so
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20170829-22106-1b2xrgj
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20170904-58977-qx0j5l

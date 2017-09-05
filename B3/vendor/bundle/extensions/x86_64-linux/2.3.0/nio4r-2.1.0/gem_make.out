@@ -1,5 +1,5 @@
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r
-/usr/bin/ruby2.3 -r ./siteconf20170827-19648-1uice2w.rb extconf.rb
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r
+/usr/bin/ruby2.3 -r ./siteconf20170904-39819-1ih3ebh.rb extconf.rb
 checking for unistd.h... yes
 checking for sys/select.h... yes
 checking for poll.h... yes
@@ -9,10 +9,10 @@ checking for port.h... no
 checking for sys/resource.h... yes
 creating Makefile
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r
 make "DESTDIR=" clean
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r
 make "DESTDIR="
 compiling bytebuffer.c
 compiling monitor.c
@@ -53,6 +53,6 @@ selector.c:409:5: warning: ignoring return value of ‘write’, declared with a
      ^
 linking shared-object nio4r_ext.so
 
-current directory: /home/hxj/Ruby/code/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r
+current directory: /home/hxj/Ruby/blog/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20170827-19648-1evpo8u
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20170904-39819-l9q5gl
