@@ -4551,3 +4551,414 @@ SyntaxError (/home/hxj/Ruby/blog/app/controllers/feedbacks_controller.rb:10: syn
              ^):
   
 app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+Started GET "/" for 127.0.0.1 at 2017-09-05 23:35:24 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 821ms (Views: 769.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-05 23:35:32 +0800
+  
+SyntaxError (/home/hxj/Ruby/blog/app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+      content = params[:feedback][:content]
+             ^):
+  
+app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+Started GET "/" for 127.0.0.1 at 2017-09-05 23:45:05 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 961ms (Views: 901.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-05 23:45:23 +0800
+  
+SyntaxError (/home/hxj/Ruby/blog/app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+          content = params[:feedback][:content]
+                 ^):
+  
+app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+Started GET "/" for 127.0.0.1 at 2017-09-05 23:50:43 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 947ms (Views: 904.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-05 23:50:47 +0800
+  
+SyntaxError (/home/hxj/Ruby/blog/app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+      content = params[:feedback][:content]
+             ^):
+  
+app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+Started GET "/" for 127.0.0.1 at 2017-09-05 23:52:04 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 598ms (Views: 559.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-05 23:52:06 +0800
+  
+SyntaxError (/home/hxj/Ruby/blog/app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+          content = params[:feedback][:content]
+                 ^):
+  
+app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+Started GET "/" for 127.0.0.1 at 2017-09-05 23:53:40 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 697ms (Views: 669.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-05 23:53:42 +0800
+  
+SyntaxError (/home/hxj/Ruby/blog/app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+          content = params[:feedback][:content]
+                 ^):
+  
+app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+Started GET "/" for 127.0.0.1 at 2017-09-05 23:56:40 +0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 1069ms (Views: 1028.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-05 23:56:43 +0800
+  
+SyntaxError (/home/hxj/Ruby/blog/app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+      content = params[:feedback][:content]
+             ^):
+  
+app/controllers/feedbacks_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ']'
+Started GET "/" for 127.0.0.1 at 2017-09-05 23:57:57 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 786ms (Views: 735.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-05 23:58:00 +0800
+Processing by FeedbacksController#create as HTML
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/hxj/Ruby/blog/app/views/feedbacks/create.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/hxj/Ruby/blog/app/views/feedbacks/create.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/feedbacks/create.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/feedbacks/create.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-09-05 23:59:18 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 772ms (Views: 728.6ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-05 23:59:21 +0800
+Processing by FeedbacksController#create as HTML
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 83ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/feedback" for 127.0.0.1 at 2017-09-05 23:59:35 +0800
+Processing by FeedbacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6FM56Ru87mTaOg/ggs2wDyeQ8gc72jsTnZPhI0ketwfUwCZexZHOlzJTj4A7HVvUQoV9+dfzTiuGBZ5gyRvaGg==", "feedback"=>{"author"=>"tttt", "email"=>"123@hhu.com", "content"=>"gtgduchn"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Feedback.):
+  
+app/controllers/feedbacks_controller.rb:11:in `create'
+Started GET "/" for 127.0.0.1 at 2017-09-06 00:01:28 +0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 807ms (Views: 764.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-06 00:01:31 +0800
+Processing by FeedbacksController#create as HTML
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (45.6ms)
+Completed 200 OK in 79ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/feedback" for 127.0.0.1 at 2017-09-06 00:01:42 +0800
+Processing by FeedbacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IUrYTT/G34uGuge3vx8J/Ay5xHVtLJL6NND2UZcJOvod2cf64ev/eG7Th9cGz+InaaxLi4EF58IvRokSFwxX5w==", "feedback"=>{"author"=>"r", "email"=>"123@hhu.com", "content"=>"1213"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 70ms (Views: 27.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 00:04:51 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 715ms (Views: 671.0ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-06 00:04:54 +0800
+Processing by FeedbacksController#create as HTML
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 70ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/feedback" for 127.0.0.1 at 2017-09-06 00:05:04 +0800
+Processing by FeedbacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UXZ6pC9uPDZX35marSg8rpAA4OdO+NWKcisIJb7J9Ipt5WUT8UMcxb+2GfoU+Nd19RVvGaLRoLJpvXdmPsyZlw==", "feedback"=>{"author"=>"12", "email"=>"123@hhu.com", "content"=>"123"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 86ms (Views: 32.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 00:06:07 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 827ms (Views: 783.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-06 00:06:10 +0800
+Processing by FeedbacksController#create as HTML
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/feedback" for 127.0.0.1 at 2017-09-06 00:06:24 +0800
+Processing by FeedbacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AAtJ+KCHDw/ObMvjdfEh41K/WMiICRvFUIcHaS6XUz08mFZPfqov/CYFS4PMIco4N6rXNmQgbv1LEXgqrpI+IA==", "feedback"=>{"author"=>"1111", "email"=>"123@hhu.com", "content"=>"yegduysaje"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.7ms)[0m  [1m[32mINSERT INTO "feedbacks" ("author", "content", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author", "1111"], ["content", "yegduysaje"], ["email", "123@hhu.com"], ["created_at", "2017-09-05 16:06:25.015433"], ["updated_at", "2017-09-05 16:06:25.015433"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 118ms (Views: 46.6ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-09-06 00:06:46 +0800
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 70ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-09-06 00:07:03 +0800
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V64wGhQmaei2YU9s9iZ9X1Oegf3WyILu/rIXG2TB6GBRjcgqGaCb3hK9GNAuIbgnZ/EywhTAojrd4zYJ/hGenQ==", "user"=>{"name"=>"hhh", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "hhh"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/admin/posts
+Completed 302 Found in 256ms (ActiveRecord: 16.2ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-09-06 00:07:03 +0800
+Processing by PostsController#admin_index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/admin_index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/admin_index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 74ms (Views: 51.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/check/feedback" for 127.0.0.1 at 2017-09-06 00:07:08 +0800
+Processing by FeedbacksController#check as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering feedbacks/check.html.erb within layouts/application
+  [1m[36mFeedback Load (0.2ms)[0m  [1m[34mSELECT "feedbacks".* FROM "feedbacks"[0m
+  Rendered feedbacks/check.html.erb within layouts/application (32.3ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Feedback:0x007f3df42ae980>):
+    1: <% @feedbacks.each do |feedback| %>
+    2:   <div class="blog-post">
+    3:     <h2 class="blog-post-title"><%= feedback.title %></h2>
+    4:     <p class="blog-post-meta"><%= feedback.created_at.strftime("%Y-%m-%d %H:%M")  %></p>
+    5:     <p class="blog-post-meta"><%= feedback.author  %></p>
+    6:     <p class="blog-post-meta"><%= feedback.email %></p>
+  
+app/views/feedbacks/check.html.erb:3:in `block in _app_views_feedbacks_check_html_erb___1778223497880629305_69952132561220'
+app/views/feedbacks/check.html.erb:1:in `_app_views_feedbacks_check_html_erb___1778223497880629305_69952132561220'
+Started GET "/" for 127.0.0.1 at 2017-09-06 00:09:32 +0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 746ms (Views: 704.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-06 00:09:35 +0800
+Processing by FeedbacksController#create as HTML
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 67ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/feedback" for 127.0.0.1 at 2017-09-06 00:09:46 +0800
+Processing by FeedbacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MTfrHUWj9gpTIB1UB9CChvBodTMD5Sta0+jEffvnA64NpPSqm47W+btJnTS+AGldlX36ze/MXmLIfrs+e+Jusw==", "feedback"=>{"author"=>"qygsqu", "email"=>"ahb@hhu.com", "content"=>"hsabkix"}, "commit"=>"Submit"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "feedbacks" ("author", "content", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author", "qygsqu"], ["content", "hsabkix"], ["email", "ahb@hhu.com"], ["created_at", "2017-09-05 16:09:46.770806"], ["updated_at", "2017-09-05 16:09:46.770806"]]
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 19.6ms)
+
+
+  
+NameError (undefined local variable or method `show_posts_path' for #<FeedbacksController:0x007f1670061778>
+Did you mean?  show_post_path):
+  
+app/controllers/feedbacks_controller.rb:14:in `create'
+Started GET "/" for 127.0.0.1 at 2017-09-06 00:10:33 +0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 756ms (Views: 704.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-06 00:10:36 +0800
+Processing by FeedbacksController#create as HTML
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 67ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/feedback" for 127.0.0.1 at 2017-09-06 00:10:49 +0800
+Processing by FeedbacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gcbHC1Ked0xeniv1vM1ioQrczJyZaIeCClLAvQqEXqO9Vdi8jLNXv7b3q5UFHYl6b8lDYnVB8roRxL/+ioEzvg==", "feedback"=>{"author"=>"shbx", "email"=>"123@hhu.com", "content"=>"hsbxal"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "feedbacks" ("author", "content", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author", "shbx"], ["content", "hsbxal"], ["email", "123@hhu.com"], ["created_at", "2017-09-05 16:10:49.485369"], ["updated_at", "2017-09-05 16:10:49.485369"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 11.1ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"posts"}, missing required keys: [:id]):
+  
+app/controllers/feedbacks_controller.rb:14:in `create'
+Started GET "/" for 127.0.0.1 at 2017-09-06 00:14:45 +0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 685ms (Views: 644.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-06 00:14:48 +0800
+Processing by FeedbacksController#create as HTML
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (47.4ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"posts"}, missing required keys: [:id]):
+    32:   <%= f.submit "Submit", :class => 'btn btn-success' %>
+    33:   </div>
+    34:   </div>
+    35:   <h2><li><%= link_to "index", show_post_path  %></li></h2>
+    36:   <% end %>
+  
+app/views/feedbacks/create.html.erb:35:in `block in _app_views_feedbacks_create_html_erb___2746747875399471231_69937368507640'
+app/views/feedbacks/create.html.erb:3:in `_app_views_feedbacks_create_html_erb___2746747875399471231_69937368507640'
+Started GET "/" for 127.0.0.1 at 2017-09-06 00:20:34 +0800
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 1097ms (Views: 1022.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/feedback" for 127.0.0.1 at 2017-09-06 00:20:38 +0800
+Processing by FeedbacksController#create as HTML
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/feedback" for 127.0.0.1 at 2017-09-06 00:20:47 +0800
+Processing by FeedbacksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a6ArGCgbslPM6thUlkvHy2iUidm2WbBlekWut0E10vhXMzSv9jaSoCSDWDQvmywQDYEGJ1pwxV1h09H0wTC/5Q==", "feedback"=>{"author"=>"hbxs", "email"=>"xsnk.", "content"=>"sxn a.kwhbey"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering feedbacks/create.html.erb within layouts/application
+  Rendered feedbacks/create.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 95ms (Views: 49.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 00:20:50 +0800
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 53ms (Views: 46.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-09-06 00:21:05 +0800
+Processing by UsersController#login as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/admin/posts
+Completed 302 Found in 137ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-09-06 00:21:05 +0800
+Processing by PostsController#admin_index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/admin_index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  Rendered posts/admin_index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 65ms (Views: 60.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/check/feedback" for 127.0.0.1 at 2017-09-06 00:21:07 +0800
+Processing by FeedbacksController#check as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering feedbacks/check.html.erb within layouts/application
+  [1m[36mFeedback Load (0.3ms)[0m  [1m[34mSELECT "feedbacks".* FROM "feedbacks"[0m
+  Rendered feedbacks/check.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 49ms (Views: 41.2ms | ActiveRecord: 0.6ms)
+
+
